@@ -9,7 +9,7 @@ var MEME_SETTINGS = {
   fontFamily: 'museo-bold',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
-  fontFamilyOpts: ['publicobanner', 'publicobanner-bold', 'museo-light', 'museo', 'museo-bold', 'Helvetica Neue'],
+  fontFamilyOpts: ['"publicobanner"', '"publicobanner-bold"', '"museo-light"', '"museo"', '"museo-bold"', 'Helvetica Neue'],
   
   // Font size of main headline:
   fontSize: 24,
@@ -21,7 +21,7 @@ var MEME_SETTINGS = {
   ],
 
   headlineText: 'Schrijf een tekst', // Default headline text.
-  height: 378, // Canvas rendering height.
+  height: 512, // Canvas rendering height.
   imageScale: 1, // Background image scale.
   imageSrc: '', // Default background image path. MUST reside on host domain, or use base64 data.
   overlayAlpha: 0.5, // Opacity of image overlay.
@@ -43,8 +43,8 @@ var MEME_SETTINGS = {
 
   textShadow: false, // Text shadow toggle.
   textShadowEdit: true, // Toggles text shadow control within the editor.
-  watermarkAlpha: 1, // Opacity of watermark image.
-  watermarkMaxWidthRatio: 0.25, // Maximum allowed width of watermark (percentage of total canvas width).
+  watermarkAlpha: 0.95, // Opacity of watermark image.
+  watermarkMaxWidthRatio: 0.23, // Maximum allowed width of watermark (percentage of total canvas width).
 
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("vox.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
@@ -58,5 +58,5 @@ var MEME_SETTINGS = {
     {text: 'De Morgen wit', value: '<%= image_path("demorgen_wit.png") %>', data: ''}
   ],
 
-  width: 755 // Canvas rendering width.
+  width: 1024 // Canvas rendering width.
 };
