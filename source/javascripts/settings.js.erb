@@ -12,12 +12,12 @@ var MEME_SETTINGS = {
   fontFamilyOpts: ['Publico Banner', 'Publico Banner B', 'Museo Sans','Champion Featherweight', 'Champion Featherweight', 'Museo Sans Bold', 'Museo Sans', 'Helvetica Neue'],
   
   // Font size of main headline:
-  fontSize: 24,
+  fontSize: 30,
   // Font size options: set to empty array to disable font-size selector.
   fontSizeOpts: [
-  {text: 'Small text', value: 24},
-    {text: 'Medium text', value: 35},
-    {text: 'Large text', value: 40}
+  {text: 'Small text', value: 30},
+    {text: 'Medium text', value: 40},
+    {text: 'Large text', value: 45}
   ],
 
   headlineText: 'Schrijf een tekst', // Default headline text.
@@ -29,7 +29,7 @@ var MEME_SETTINGS = {
   // Image overlay color, or blank ('') for no overlay:
   overlayColor: '#000',
   // Overlay color options: set to empty array to disable overlay options selector.
-  overlayColorOpts: ['#000', '#260706', '#e42e24', '#123c2f', '#3c3c3c', '#104364','#e2ef00', '#01477b'],
+  overlayColorOpts: ['#000', '#260706', '#e42e24', '#123c2f', '#3c3c3c', '#104364','#e2ef00', '#01477b', '#0433ff', ],
   paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
   
   // Text alignment: valid settings are "left", "center", and "right".
@@ -44,7 +44,7 @@ var MEME_SETTINGS = {
   textShadow: false, // Text shadow toggle.
   textShadowEdit: true, // Toggles text shadow control within the editor.
   watermarkAlpha: 1, // Opacity of watermark image.
-  watermarkMaxWidthRatio: 0.15, // Maximum allowed width of watermark (percentage of total canvas width).
+  watermarkMaxWidthRatio: 0.20, // Maximum allowed width of watermark (percentage of total canvas width).
 
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("vox.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
